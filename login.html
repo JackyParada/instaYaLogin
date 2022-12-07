@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Home</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#page-top"><img src="assets/img/navbar-logo.png" alt="..." /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars ms-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#signinModal">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#signupModal">Registro</a></li>
+                    
+                   <!--<li class="nav-item"><a class="nav-link" href="#" id="logout">Cerrar cesion</a></li>-->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Masthead-->
+    <header class="masthead position-fixed">
+        <div class="container">
+            <div class="masthead-heading text-uppercase text-light">¡Bienvenido a instaYa!</div>
+            <a class="btn btn-primary btn-xl text-uppercase" href="#" data-toggle="modal" data-target="#signinModal">Comencemos</a>
+        </div>
+    </header>
+
+    <!-- Modal login-->
+
+        <div class="modal fade" id="signinModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="container">
+                <div class="card-body-main p-5">
+                    <h2 class="text-uppercase text-center mb-5">¡Bienvenido de vuelta!</h2>
+                    <p class=" text-center mb-5">Estamos emocionados de verte de nuevo</p>
+        
+                    <form id="signin-form">
+        
+                    <div class="form-outline mb-4">
+                    <label class="form-label" for="signin-email">Email</label>
+                    <input type="email" id="signin-email" class="form-control form-control-lg" required="required" />
+                    </div>
+        
+                    <div class="form-outline mb-4">
+                    <label class="form-label" for="signin-password">Contraseña</label>
+                    <input type="password" id="signin-password" class="form-control form-control-lg" required="required"/>
+                    </div>
+        
+                    <div class="d-flex justify-content-center">
+                    <button type="submit"
+                        class="btn btn-primary btn-block btn-lg text-body">Empecemos</button>
+                    </div>
+        
+                    <p class="text-center text-muted mt-5 mb-0">¿No tienes cuenta? 
+                        <a href="#" data-toggle="modal" data-target="#signupModal" class="fw-bold text-body" ><u>¡Registrate!</u></a>
+                    </p>
+        
+                    </form>  
+                </div>  
+            </div>
+            </div>
+            </div>
+        </div>
+
+   
+
+     <!-- Modal register-->
+
+     <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="container">
+            
+                <div class="card-body-main p-5">
+                <h2 class="text-uppercase text-center mb-5">Crea una cuenta</h2>
+
+                <form id="signup-form">
+
+                    <div class="form-outline mb-4">
+                    <label class="form-label" for="signup-name">Tu nombre</label>
+                    <input type="text" id="signup-name" class="form-control form-control-lg" required="required"/>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                    <label class="form-label" for="signup-email">Tu email</label>
+                    <input type="email" id="signup-email" class="form-control form-control-lg" required="required"/>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                    <label class="form-label" for="signup-password">Contraseña</label>
+                    <input type="password" id="signup-password" class="form-control form-control-lg" required="required"/>
+                    </div>
+
+                    <div class="form-outline mb-4">
+                    <label class="form-label" for="signup-password-verification">Repite tu contraseña</label>
+                    <input type="password" id="signup-password-verification" class="form-control form-control-lg" required="required"/>
+                    </div>
+
+                    <div class="form-check d-flex justify-content-center mb-5">
+                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3cg" />
+                    <label class="form-check-label" for="form2Example3g" required="required">
+                        Acepto <a href="#!" class="text-body"><u>politica de privacidad</u></a>
+                    </label>
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary btn-block btn-lg text-body">Empecemos</button>
+                    </div>
+
+                </form>
+
+        </div>
+        </div>
+        </div>
+    </div>    
+
+
+
+
+    <!-- BOOSTRAP SCRIPTS-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+    <!-- FIREBASE SCRIPTS-->
+    <!-- <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+    
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+        
+        
+        import {  getAuth, createUserWithEmailAndPassword  } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js";
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyAmsDHyQXvaeFdxe8qfff45Lowl_VQEmuY",
+          authDomain: "fb-instaya.firebaseapp.com",
+          projectId: "fb-instaya",
+          storageBucket: "fb-instaya.appspot.com",
+          messagingSenderId: "837447582894",
+          appId: "1:837447582894:web:e2a03a19083dcbbb65593f"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        
+        // Initialize Firebase Authentication and get a reference to the service
+        const auth = getAuth(app);
+
+    </script> -->
+
+
+    <!-- CUSTOM CODE-->
+    <script type="module" src="./js/login.js"></script>
+
+</body>
+</html>
